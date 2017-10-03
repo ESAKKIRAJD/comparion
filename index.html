@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, 
+    user-scalable=no" /> 
+    <title>Comparision</title>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+    crossorigin="anonymous">
+  
+</head>
+  <div class="container  w-50 ">
+       <div class="row mb-3 mt-2">  
+           <div class="col">
+             <div class="input-group">
+                  <input type="text" class="form-control btn btn-lg btn-outline-info" id="inp1" value=""> 
+               </div>
+           </div> 
+           <div class="col">
+             <div class="input-group">
+                  <input type="text" class="form-control btn btn-lg btn-outline-info" id="inp2" value="">
+             </div>
+           </div>     
+      </div>
+     <div class="row mb-3">  
+           <div class="col">
+               <div class="input-group">
+                   <input type="submit" class="form-control btn btn-lg btn-outline-info" value="==" onclick="myOperator()"> 
+                </div>
+               </div> 
+               <div class="col">
+                   <div class="input-group">
+                     <input type="submit" class="form-control btn btn-lg btn-outline-info" value="==="
+                       onclick="myFunction()">  
+                   </div>
+                 </div>
+            <p id="com"></p>
+      </div>   
+     <div class="row mb-3">  
+      <div class="col">
+        <div class="input-group">
+             <input type="submit" class="form-control btn btn-lg btn-outline-info" value="!=" onclick="myOperator1()">  
+          </div>
+      </div>  
+      <div class="col">
+        <div class="input-group">
+             <input type="submit" class="form-control btn btn-lg btn-outline-info" value="!=="
+             onclick="myFunction1()"> 
+          </div>
+        </div>
+         <p id="com"></p>
+      </div> 
+  <div class="row mb-3">  
+      <div class="col">
+        <div class="input-group">
+             <input type="submit" class="form-control btn btn-lg btn-outline-info" value=">" onclick="myOperator2()"> 
+          </div>
+      </div>  
+      <div class="col">
+        <div class="input-group">
+             <input type="submit" class="form-control btn btn-lg btn-outline-info" value="<"
+             onclick="myFunction2()">  
+          </div>
+        </div>
+         <p id="com"></p>
+      </div>
+       <div class="row mb-3">  
+      <div class="col">
+        <div class="input-group">
+             <input type="submit" class="form-control btn btn-lg btn-outline-info" value=">=" onclick="myOperator3()"> 
+          </div>
+      </div>  
+      <div class="col">
+        <div class="input-group">
+             <input type="submit" class="form-control btn btn-lg btn-outline-info" value="<="
+             onclick="myFunction3()">  
+          </div>
+        </div>
+         <p id="com"></p>
+      </div>  
+  </div>
+
+
+  <div class="container">
+        <div class="row pb-2">
+           <div class="col">
+             <div class="input-group">
+                <input type="text" class="form-control btn btn-lg btn-outline-info" value="Onclick"> 
+                <button class=" btn btn-info btn-lg"  onclick="myFunction()">click me!</button>
+                <span id="button"></span>
+              </div>
+            </div> 
+        </div>
+        <div class="row pb-2">
+           <div class="col">
+             <div class="input-group">
+                <input type="text" class="form-control btn btn-lg btn-outline-info" value="Double click"> 
+                <button class=" btn btn-info btn-lg"  ondblclick="myClick()">click me!</button>
+                <span id="dk"></span>
+              </div>
+            </div> 
+        </div> 
+        <div class="row pb-2">
+          <h1>Onkeyup</h1>
+           <div class="col">
+             <div class="input-group">
+                <input type="text" class="form-control btn btn-lg btn-outline-info" id="message" onkeyup="myData()" value=""> 
+                <button class=" btn btn-info btn-lg">click me!</button>
+                <span id="mass"></span>
+              </div>
+            </div> 
+        </div> 
+        <div class="row pb-2">
+          <h1>Keydown</h1>
+           <div class="col">
+             <div class="input-group">
+                <input type="text" class="form-control btn btn-lg btn-outline-info" onkeydown="myAlert()" value=""> 
+                <button class=" btn btn-info btn-lg">click me!</button>
+                <span id="rajaram"></span>
+              </div>
+            </div> 
+        </div> 
+        <div class="row pb-2">
+          <h1>Onkeypress</h1>
+           <div class="col">
+             <div class="input-group">
+                <input type="text" class="form-control btn btn-lg btn-outline-info" onkeypress="myKey()" value=""> 
+                <button class=" btn btn-info btn-lg">click me!</button>
+                <span id="raja"></span>
+              </div>
+            </div> 
+        </div> 
+        <div class="row pb-2">
+          <h1>Onfocus</h1>
+           <div class="col">
+             <div class="input-group">
+                <input type="text" class="form-control btn btn-lg btn-outline-info" onfocus="myFocus()" id="details" value=""> 
+                <button class=" btn btn-info btn-lg">click me!</button>
+                <span id="raja"></span>
+              </div>
+            </div> 
+        </div> 
+        <div class="row pb-2">
+          <h1>Onblur</h1>
+           <div class="col">
+             <div class="input-group">
+                <input type="text" class="form-control btn btn-lg btn-outline-info" onblur="myBlur()" id="domain" value="">
+                <button class=" btn btn-info btn-lg">click me!</button>
+                <span id="raja"></span>
+              </div>
+            </div> 
+        </div> 
+        <div class="row pb-2">
+          <h1>Switch case</h1>
+           <div class="col">
+             <div class="input-group">
+                <input type="text" class="form-control btn btn-lg btn-outline-info" id="friends"  value="">
+                <button class=" btn btn-info btn-lg" onclick="myFriends()">click me!</button>
+                <span id="mdt"></span>
+              </div>
+            </div> 
+        </div>
+        <div class="row pb2">
+          <h1>Forloop</h1>
+            <div class="col">
+              <p>InPut Numbers : 1,2,3,33,1,2,33,44,33,12,21,1,3,12,12,1,3;</p>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="input-group">
+                    <input type="text" class="form-control btn btn-lg btn-outline-info" id="given number"  value="">
+               </div>
+              </div>              
+            </div>            
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control btn btn-lg btn-outline-info" onclick="myOutput()" value="Find Number">
+              </div>
+            </div>       
+            <div class="row">
+              <div class="col">
+                <p> The number is : <span id="given num"></span><br>
+                  The number of times :<span id="get number"></span></p>
+              </div>
+            </div>           
+          </div>  
+      </div> 
+       
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="compar.js"></script> 
+
+
+</body>
+</html>
